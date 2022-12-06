@@ -12,8 +12,8 @@ const seccionesPagina = new fullpage("#fullpage", {
 	// ──────────────────────────────────────────────────
   navigation: true, // Muesta la barra de navegación.
   menu: '#menu', // Menu de navegación.
-  anchors: ['Home', 'Proyects', 'Contact'], // Anclas, las usamos para identificar cada seccion y poder acceder a ellas con el menu.
-  navigationTooltips: ['Home', 'Proyects', 'Contact'], // Tooltips que mostrara por cada boton.
+  anchors: ['Home', 'Projects', 'Contact'], // Anclas, las usamos para identificar cada seccion y poder acceder a ellas con el menu.
+  navigationTooltips: ['Home', 'Projects', 'Contact'], // Tooltips que mostrara por cada boton.
   showActiveTooltip: false, // Mostrar tooltip activa.
 	//   :::::: Secciones
 	// ──────────────────────────────────────────────────

@@ -5,11 +5,11 @@
 
 
 #fp-nav ul li a span {
-  background: orange;
+  background: black;
 }
 
 #fp-nav ul li .fp-tooltip {
-  color: orange;
+  color: black;
 }
 
 /* menu de navegacion  */
@@ -25,6 +25,7 @@
     padding: 10px  20px;
 }
 
+
 .nav li,
 .nav a {
     display: inline-block;
@@ -38,7 +39,7 @@
 }
 
 .nav li.active {
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid black;
 }
 
 .menu li  a {
@@ -49,7 +50,7 @@
 
 .menu li.active a,
 .menu li:hover a {
-    color: orange;
+    color: white;
 }
 
 
@@ -60,8 +61,18 @@
 }
 
 body {
+  position: relative;
   font-family: "Lato", sans-serif;
+
   font-size: 18px;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  background-color: #9bb6c7;
+
 }
 
 h1,
@@ -76,20 +87,35 @@ h6 {
 
 .texto-naranja {
   font-weight: 300;
-  color: orange;
+  color: black;
 }
 
 .texto-blanco {
-  font-weight: 700;
-  color: #fff;
+  font-weight: 700px;
+  color: #9bb6c7;
 }
 
 .texto-negro {
   color: #000;
 }
+
+h1 {
+  position: absolute;
+  left: 10%;
+  color: #9bb6c7;
+  font-size: 42px;
+  font-size: clamp(1rem, 5.5vw, 4rem);
+  font-weight: 900;
+}
+
+h1 span {
+  color: black;
+}
+
+/*  */
 .header {
-  background-color: #000;
-  background-position: center;
+  background-color: #9bb6c7 !important;
+  /* background-position: center; */
 }
 .header .contenedor-titulo {
   text-align: center;
@@ -126,18 +152,24 @@ h6 {
 /* productos */
 .proyectos article {
     background-position: center;
-    background-size: cover;
+    /* background-size: cover; */
 }
 .proyectos article:nth-child(1){
-    background-color: greenyellow;
+  background: url('../media/Food.png') no-repeat fixed center;
+  background-color:#64B98B;
+  background-size: 60%;
 }
 .proyectos article:nth-child(2){
-    background: url('../media/Dogg.png');
-    background-position: center;
+    background: url('../media/Dogs..png') no-repeat fixed center;
+    border-color: #0E151A;
+    background-size: 60%;
    
 }
 .proyectos article:nth-child(3){
-    background-color: red;
+ 
+  background: rgb(100,185,139);
+  background: linear-gradient(90deg, rgba(100,185,139,1) 14%, rgba(155,182,199,1) 82%);
+    
 }
 
 .proyectos .informacion-proyecto {
@@ -145,7 +177,7 @@ h6 {
 }
 
 .proyectos .informacion-proyecto::before{
-content: "";
+/* content: ""; */
 height: 50px;
 width: 2px;
 display: inline-block;
@@ -184,7 +216,7 @@ top: 95%;
 
 /* footer */
 
-.footer .texto-naranja {
+.footer .texto-blanco {
   text-transform: uppercase;
   font-size: 60px;
   letter-spacing: 2px;
@@ -210,7 +242,7 @@ display: flex;
 width: 100px;
 height: 100px;
 background: #fff;
-color: #30313a;
+color: #9bb6c7;
 text-decoration: none;
 align-items: center;
 justify-content: center;
@@ -225,8 +257,53 @@ margin: 0 20px;
   color:#1da1f2
 }
 .footer .mail:hover i{
-  color:orange
+  color:green
 }
 .footer .cv:hover i{
-  color:orange
+  color:green
 }
+.footer .github:hover i{
+  color:black
+}
+/* /////////////////////////////////////////////////////// */
+.radar {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  min-width: 150%;
+  transform-origin: center center;
+  aspect-ratio: 1/1;
+}
+
+@media (max-width: 600px) {
+  .radar {
+    min-width: 300%;
+  }
+}
+
+.radar .shadow {
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    #0E151A 0deg,
+    transparent 360deg
+  );
+  opacity: 1;
+  padding: 50%;
+  z-index: 1;
+  animation: spin 7s linear infinite;
+  transform-origin: center center;
+  margin-left: -170px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
