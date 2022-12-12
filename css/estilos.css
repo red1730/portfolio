@@ -153,17 +153,26 @@ h1 span {
 
 /* productos */
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
 .proyectos article:nth-child(1) {
-  background-color: #9cbacc;
+  background-color: #9bb6c7;
  
 }
 .proyectos article:nth-child(2) {
 
-  background-color: #9cbacc;
+  background-color: #9bb6c7;
 }
 
 .food {
- 
+  max-width: 1000px;
+  max-height: 500px;
+  margin-left: 150px;
 
   box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.33);
   -webkit-box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.33);
@@ -171,19 +180,21 @@ h1 span {
 }
 
 .dog {
-width: 60em;
-margin-right: 50px;
-display:flex;
+max-width: 1000px;
+max-height: 500px;
+margin-left: 150px;
+
+align-items: center;
 justify-content: center;
+
+
   
   box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.33);
   -webkit-box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.33);
 }
 
-/* .proyectos .informacion-proyecto {
-  margin: 0 30px;
-} */
+
 
 /* flechas  */
 
@@ -253,11 +264,9 @@ justify-content: center;
   color: #1da1f2;
 }
 .footer .mail:hover i {
-  color: green;
+  color: black;;
 }
-.footer .cv:hover i {
-  color: green;
-}
+
 .footer .github:hover i {
   color: black;
 }
