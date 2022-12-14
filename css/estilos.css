@@ -175,8 +175,7 @@ h1 span {
   margin-left: 250px;
 
   box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.33);
-  -webkit-box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.33);
-  -moz-box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.33);
+ 
 }
 
 .dog {
@@ -194,7 +193,7 @@ justify-content: center;
 @media (max-width: 768px) {
   .dog {
     margin-left: 0%;
-    width: 500px;
+    width: 398px;
     height: auto;
     padding: 7%;
     box-shadow:none
@@ -203,7 +202,7 @@ justify-content: center;
 @media (max-width: 768px) {
   .food {
     margin-left: 0%;
-    width: 500px;
+    width: 398px;
     height: auto;
     padding: 7%;
     box-shadow:none
@@ -276,6 +275,7 @@ justify-content: center;
   justify-content: center;
   border-radius: 100px;
   margin: 0 20px;
+  
 }
 
 .footer .linkedin:hover i {
