@@ -70,13 +70,21 @@ body {
   background-color: #9bb6c7;
 }
 .subtitulo {
-  position: absolute;
-
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
   text-align: center;
-  margin-right: 500px;
+  margin-top: 142px;
+  margin-left: 213px;
+  padding: 14px;
 }
+
+@media (max-width: 768px) {
+  .subtitulo {
+    margin-left: 4px;
+    font-size: 25px;
+  }  
+}
+
 
 h1,
 h2,
