@@ -31,7 +31,7 @@
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-size: 19px;
-  color: #c2c2c2;
+  color: #9bb6c7;
   transition: 0.5s ease;
 }
 
@@ -70,21 +70,21 @@ body {
   background-color: #9bb6c7;
 }
 .subtitulo {
+  position: fixed;
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
   text-align: center;
   margin-top: 142px;
-  margin-left: 213px;
+  margin-left: 477px;
   padding: 14px;
 }
 
 @media (max-width: 768px) {
   .subtitulo {
-    margin-left: 4px;
+    margin-left: 76px;
     font-size: 25px;
-  }  
+  }
 }
-
 
 h1,
 h2,
@@ -165,16 +165,13 @@ h1 span {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .proyectos article:nth-child(1) {
-  background-color: #1F282F;
- 
+  background-color: black;
 }
 .proyectos article:nth-child(2) {
-
-  background-color: #1F282F;
+  background-color: black;
 }
 
 .food {
@@ -182,20 +179,16 @@ h1 span {
   height: 400px;
   margin-left: 250px;
 
-  box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.33);
- 
 }
 
 .dog {
-width: 900px;
-height: 400px;
-margin-left: 250px;
+  width: 900px;
+  height: 400px;
+  margin-left: 250px;
 
-align-items: center;
-justify-content: center;
-  
-  box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.33);
-  
+  align-items: center;
+  justify-content: center;
+
 }
 
 @media (max-width: 768px) {
@@ -204,8 +197,8 @@ justify-content: center;
     width: 398px;
     height: auto;
     padding: 7%;
-    box-shadow:none
-  }  
+    box-shadow: none;
+  }
 }
 @media (max-width: 768px) {
   .food {
@@ -213,16 +206,15 @@ justify-content: center;
     width: 398px;
     height: auto;
     padding: 7%;
-    box-shadow:none
-  }  
+    box-shadow: none;
+  }
 }
 @media (max-width: 768px) {
-.titulo {
-  margin-top: -97px;
-  left: 0%;
+  .titulo {
+    margin-top: -97px;
+    left: 0%;
+  }
 }
-}
-
 
 /* flechas  */
 
@@ -234,12 +226,12 @@ justify-content: center;
 .fp-controlArrow.fp-prev {
   left: 70%;
   border-width: 20px 20px 20px 0;
-  border-color: transparent #000 transparent transparent;
+  border-color: transparent #9bb6c7 transparent transparent;
 }
 .fp-controlArrow.fp-next {
   right: 50px;
   border-width: 20px 0px 20px 20px;
-  border-color: transparent transparent transparent #000;
+  border-color: transparent transparent transparent #9bb6c7;
 }
 
 /* footer */
@@ -283,7 +275,6 @@ justify-content: center;
   justify-content: center;
   border-radius: 100px;
   margin: 0 20px;
-  
 }
 
 .footer .linkedin:hover i {
@@ -293,7 +284,7 @@ justify-content: center;
   color: #1da1f2;
 }
 .footer .mail:hover i {
-  color: black;;
+  color: black;
 }
 
 .footer .github:hover i {
@@ -340,31 +331,36 @@ justify-content: center;
   }
 }
 
+
+
 /* iconos */
 
-.icons{
+.icons {
   text-decoration: none;
   font-size: 35px;
   color: #9bb6c7;
   align-content: center;
   display: flex;
-  margin-left: 60px;
- justify-content: center;
- transition: .5s;
- margin-top: 10px;
- box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.33);
- 
+  margin-left: 40px;
+  justify-content: center;
+  transition: 0.5s;
+  margin-top: 10px;
+  /* box-shadow: 10px 10px 5px -3px rgba(255, 255, 255, 0.33); */
 }
 .icons-conteiner {
-  width: 150px;
+  position: fixed;
   display: flex;
-  margin-left: 585px;
+  
+  z-index: 70;
+  width: 50%;
+  padding: 0px 215px;
+  margin: 0;
 }
-.icons:hover{
+.icons:hover {
   color: white;
 }
 
-.copyright{
+.copyright {
   align-items: center;
   height: 67px;
   color: white;
@@ -372,26 +368,48 @@ justify-content: center;
 
   margin-bottom: -153px;
   margin-top: 180px;
-  
-  background-color: #1F282F;
+
+  background-color: #9bb6c7;
   display: flex;
-  
 }
 
 @media (max-width: 600px) {
-.icons {
-  margin-left: -263px;
-}
+  .icons {
+    margin-left: -263px;
+  }
 
   .copyright {
     font-size: 13px;
-    
-
     margin-bottom: -300px;
-   
-   
-    margin-top: 202px;
+    margin-top: 153px;
     height: 106px;
-    
   }
+}
+
+
+.about-text{
+  color: #9bb6c7;
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 336px;
+ 
+ 
+  transition: 3s ease all;
+}
+.about-text:hover{
+  color: white;
+  text-shadow: white;
+}
+
+.avioncito {
+  margin-top: 180px;
+  color: rgb(204, 202, 202);
+  font-size: 35px;
+  margin-left: 350px;
+
+
+}
+.avioncito:hover {
+ 
+  color: white;
 }
