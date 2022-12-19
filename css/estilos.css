@@ -168,17 +168,16 @@ h1 span {
 }
 
 .proyectos article:nth-child(1) {
-  background-color: black;
+background: linear-gradient(180deg, #9bb6c7 5%, #000000 80%);
 }
 .proyectos article:nth-child(2) {
-  background-color: black;
+  background: linear-gradient(180deg, #9bb6c7 5%, #000000 80%);
 }
 
 .food {
   width: 900px;
   height: 400px;
   margin-left: 250px;
-
 }
 
 .dog {
@@ -188,7 +187,6 @@ h1 span {
 
   align-items: center;
   justify-content: center;
-
 }
 
 @media (max-width: 768px) {
@@ -331,8 +329,6 @@ h1 span {
   }
 }
 
-
-
 /* iconos */
 
 .icons {
@@ -350,7 +346,7 @@ h1 span {
 .icons-conteiner {
   position: fixed;
   display: flex;
-  
+
   z-index: 70;
   width: 50%;
   padding: 0px 215px;
@@ -386,30 +382,27 @@ h1 span {
   }
 }
 
-
-.about-text{
+.about-text {
   color: #9bb6c7;
-  text-align: justify;
-  margin-left: 20px;
-  margin-right: 336px;
- 
- 
+  padding: 20px;
+  width: 950px;
+  position: relative;
+  left: -198px;
+  margin-left: 40px;
+
   transition: 3s ease all;
 }
-.about-text:hover{
+.about-text:hover {
   color: white;
   text-shadow: white;
 }
 
-.avioncito {
-  margin-top: 180px;
-  color: rgb(204, 202, 202);
-  font-size: 35px;
-  margin-left: 350px;
 
-
-}
-.avioncito:hover {
- 
-  color: white;
+@media (max-width: 600px) {
+  .about-text{
+    left: auto;
+  }
+  .menu {
+    font-size: 9px;
+  }
 }
